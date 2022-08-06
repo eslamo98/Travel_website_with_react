@@ -1,0 +1,93 @@
+@import "../colors.css";
+
+.packages {
+    background: #eee;
+    padding: 5rem 9%;
+}
+
+.package-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.packages-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.package {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    border: 2px solid #000;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.package:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.package img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.package-name {
+    font-size: 1.3rem;
+    margin-block: 0.6rem;
+    font-weight: 600;
+    
+}
+
+.package-details {
+    font-size: 0.9rem;
+}
+
+.package-price {
+    font-size: 1.1rem;
+    margin-block: 0.6rem;
+    color: var(--primary);
+}
+
+.package-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-block: 0.8rem;
+    transition: 0.3s linear;
+    font-weight: 400;
+}
+
+.package:hover .package-btn {
+    border-color: var(--white);
+    
+    background: var(--white);
+}
+
+.package-btn:hover {
+    color: #000;
+}
+
+@media (max-width: 912px) {
+    .packages-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .packages-container {
+        grid-template-columns: 400px;
+        justify-content: center;
+
+    }
+}

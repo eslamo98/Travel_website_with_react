@@ -1,0 +1,106 @@
+@import "../colors.css";
+.features {
+    padding: 5rem 9%;
+}
+
+.features-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 10px;
+    cursor:grab;
+    user-select: none;
+    
+}
+
+
+
+.features .swiper-slide {
+    /* flex: 1 1 260px; */
+    min-width: 200px !important;
+    justify-content: center;
+    /* margin: auto !important; */
+}
+
+.img-btns-container {
+    position: relative;
+    overflow: hidden;    
+}
+
+.img-btns-container img {
+    width: 100%;
+}
+
+.feature-btns {
+    /* transform: translateY(100%); */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    bottom: -48px; 
+    transition: 0.4s ease-in-out;
+}
+
+.feature-btns-up {
+    bottom: 35px !important;
+}
+
+.btn-cont {
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    transition: 0.3s linear;
+    cursor: pointer;
+    color: var(--white);
+    padding: 0.6rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cont:hover {
+    background-color: var(--primary);
+}
+
+.feature-details {
+    display: flex;
+    margin-top: -7px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+    background-color: var(--white);
+    width: 100%;
+    padding-top: 10px;
+}
+
+.feature-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+
+.feature-rating,
+.feature-price {
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+.feature-price {
+    color: var(--primary);
+}

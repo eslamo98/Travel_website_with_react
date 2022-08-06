@@ -1,0 +1,41 @@
+@import "../colors.css";
+
+.outdoor {
+    padding: 4rem 9%;
+    background-color: #eee;
+}
+
+.outdoor-cont {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.outdoor-img {
+    flex: 1 10 28rem;
+    max-width: 600px;
+    padding-right: 2rem;
+}
+
+
+.outdoor-img img {
+    width: 100%;
+    box-shadow: 3rem 3rem 0 rgb(0 0 0 / 10%);
+}
+.outdoor-info { 
+    flex: 1 1 30rem;
+    max-width: 600px;
+}
+.outdoor-heading {
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.outdoor-details {
+    font-size: 0.9rem;
+    line-height: 1.8rem
+}

@@ -1,0 +1,89 @@
+@import "../colors.css";
+
+.posts {
+    padding: 5rem 9%;
+    cursor: grab;
+    user-select: none;
+}
+
+.posts-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.post {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.post-body {
+    width: 100%;
+    position: relative;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.post-date {
+    position: absolute;
+    background: var(--secondary);
+    padding: 6px 15px;
+    color: var(--white);
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    transform: translate(-50%,50%);
+    width: 265px;
+    margin: auto;
+    height: 41px;
+    
+}
+
+.post-link {
+    color: var(--white);
+    transition: 0.3s linear;
+}
+.post-link:hover {
+    color: var(--primary);
+}
+
+.date-icon {
+    color: var(--primary);
+    margin-right: 7px;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.post-name {
+    font-size: 1.3rem;
+    margin-block: 0.6rem;
+    font-weight: 600;
+}
+
+.post-content {
+    color: var(--secondary);
+    font-weight: 300;
+}
+.post-info .get-started {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}

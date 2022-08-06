@@ -1,0 +1,12 @@
+export { default as Navbar } from './Navbar/Navbar';
+export { default as Main } from './Main/Main';
+export { default as Adventure } from './Adventure/Adventure';
+export { default as Outdoor } from './Outdoor/Outdoor';
+export { default as Features } from './Features/Features';
+export { default as Packages } from './Packages/Packages';
+export { default as Reviews } from './Reviews/Reviews';
+export { default as Orders } from './Orders/Orders';
+export { default as Posts } from './Posts/Posts';
+export { default as Subscribe } from './Subscribe/Subscribe';
+export { default as Partners } from './Partners/Partners';
+export { default as Footer } from './Footer/Footer';
