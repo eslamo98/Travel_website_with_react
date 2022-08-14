@@ -1,4 +1,5 @@
 # Travel_Website-with-react
+
 ## fully responsive travel web page with html, css, and react
 
 ## the design of the page: https://www.youtube.com/c/MrWebDesignerAnas
@@ -6,6 +7,7 @@
 ## to run the app:
 
 ## run `npm install` to install the project dependencies
+
 ## `npm start`
 
 Runs the app in the development mode.\
@@ -50,4 +52,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
