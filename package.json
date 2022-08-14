@@ -2,7 +2,7 @@
   
   "name": "my_app",
   "version": "0.1.0",
-  "pagename": "./eslamo98.github.io/Travel_website_with_react",
+  "pagename": "http://eslamo98.github.io/Travel_website_with_react",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
