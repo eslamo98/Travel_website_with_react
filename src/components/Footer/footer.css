@@ -1,0 +1,79 @@
+@import "../colors.css";
+
+footer {
+    background-position: center center;
+    color: var(--white);
+    background-attachment: fixed;
+}
+
+.overlay {
+    padding-bottom: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+    padding: 5rem 9% 0 9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-links-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.quick-links-list li {
+    display: flex;
+}
+.quick-links-list a {
+    transition: 0.2s linear;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.8rem 0;
+}
+
+.quick-links-list a:hover {
+    color: var(--primary);
+}
+
+.footer-icon {
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+
+.data {
+    transition: 0.2s linear;
+}
+
+.quick-links-list a:hover  .data {
+    padding-left: 15px;
+}
+
+.copy {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.my-name {
+    color: var(--primary);
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .quick-links {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

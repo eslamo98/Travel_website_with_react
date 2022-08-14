@@ -1,0 +1,68 @@
+@import "../colors.css";
+
+.reviews {
+    padding: 5rem 9%;
+    cursor: grab;
+    user-select: none;
+}
+
+.reviews-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.review {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.review-body {
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    position: relative;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.review-body::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: #eee;
+    left: 0;
+    bottom: 0;
+    transform: translate(9px,51%) rotate(45deg);
+}
+
+.review-writer {
+    display: flex;
+    gap: 15px;
+}
+
+.writer-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.writer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.writer-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.writer-title {
+    color: var(--primary);
+}

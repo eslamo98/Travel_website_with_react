@@ -1,0 +1,10 @@
+.partners {
+    margin: 5rem 9%;
+    cursor: grab;
+    user-select: none;
+}
+
+.partners .swiper-slide {
+    justify-content: center;
+    display: flex;
+}

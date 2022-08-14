@@ -1,0 +1,97 @@
+@import "../colors.css";
+
+.orders {
+    background: #eee;
+    padding: 5rem 9%;
+}
+
+.orders-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.orders-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    border: 2px solid #000;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.order:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.order img {
+    width: 100px;
+    /* border-radius: 10px; */
+}
+
+.order:hover img {
+    filter: invert(1);
+}
+
+.order-name {
+    font-size: 1.3rem;
+    margin-block: 0.6rem;
+    font-weight: 600;
+    
+}
+
+.order-details {
+    font-size: 0.9rem;
+}
+
+.order-price {
+    font-size: 1.1rem;
+    margin-block: 0.6rem;
+    color: var(--primary);
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-block: 0.8rem;
+    transition: 0.3s linear;
+    font-weight: 400;
+}
+
+.order:hover .order-btn {
+    border-color: var(--white);
+    
+    background: var(--white);
+}
+
+.order-btn:hover {
+    color: #000;
+}
+
+@media (max-width: 912px) {
+    .orders-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .orders-container {
+        grid-template-columns: 400px;
+        justify-content: center;
+
+    }
+}

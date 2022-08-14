@@ -1,0 +1,56 @@
+@import '../colors.css';
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    
+}
+
+.slide_1 {
+    background-position:  100% 50%;
+    margin-left: auto;
+}
+
+.slide_1 .slide-content,
+.slide_3 .slide-content {
+    margin-left: auto;
+}
+.slide_2 {
+    background-position:  0% 50%
+}
+
+.slide_3 {
+    background-position:  100% 50%
+}
+
+
+.slide-content {
+    
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+ .slide_title {
+    display: block;
+    font-size: 2.8rem;
+    margin-bottom: -10px;
+}
+
+ .slide_name {
+    display: block;
+    font-size: 4rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-block: 0.7rem;
+}
+
+.slide-details {
+    line-height: 2rem;
+}
+
