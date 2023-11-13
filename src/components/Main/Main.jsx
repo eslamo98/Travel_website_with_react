@@ -1,5 +1,8 @@
 import React from 'react'
 import { Navigation } from 'swiper';
+import img1 from "./home-bg-1.jpg"
+import img2 from "./home-bg-2.jpg"
+import img3 from "./home-bg-3.jpg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -18,7 +21,7 @@ const Main = () => {
       loop
     >
         <SwiperSlide>
-                <div className="slide_1 slide " style={{backgroundImage: "url('images/home-bg-1.jpg')"}}> 
+                <div className="slide_1 slide " style={{backgroundImage: `url("${img1}")`}}> 
                     <div className="slide-content">
                         <span className='slide_title'>Never Stop</span>
                         <span className='slide_name'>Exploring</span>
@@ -32,7 +35,7 @@ const Main = () => {
                 </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="slide_2 slide " style={{backgroundImage: "url('images/home-bg-2.jpg')"}}> 
+            <div className="slide_2 slide " style={{backgroundImage: `url("${img2}")`}}> 
                 <div className="slide-content">
                     <span className='slide_title'>Make Tour</span>
                     <span className='slide_name'>Amazing</span>
@@ -46,7 +49,7 @@ const Main = () => {
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="slide_3 slide " style={{backgroundImage: "url('images/home-bg-3.jpg')"}}> 
+            <div className="slide_3 slide " style={{backgroundImage: `url("${img3}")`}}> 
                 <div className="slide-content">
                     <span className='slide_title'>Explore The</span>
                     <span className='slide_name'>New World</span>

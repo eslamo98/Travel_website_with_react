@@ -1,6 +1,11 @@
 import React from 'react'
 import AdventureElement from "./AdventureElement";
 import "./adventure.css"
+import img1 from "./category-1.jpg"
+import img2 from "./category-2.jpg"
+import img3 from "./category-3.jpg"
+import img4 from "./category-4.jpg"
+
 const Adventure = ({windowSize}) => {
   return (
     <section className="adventure" style={{padding: windowSize > 1334 ? "5rem 9%" : "5rem 1rem"}}>
@@ -8,10 +13,10 @@ const Adventure = ({windowSize}) => {
         <div className="container"
         style={{justifyContent: windowSize > 1128 ? "flex-start" : "center"}}
         >
-            <AdventureElement image="./images/category-1.jpg" title="Bungee Jump"/>
-            <AdventureElement image="./images/category-2.jpg" title="Zip Lines"/>
-            <AdventureElement image="./images/category-3.jpg" title="Canoeing"/>
-            <AdventureElement image="./images/category-4.jpg" title="Kayaking"/>
+            <AdventureElement image={img1} title="Bungee Jump"/>
+            <AdventureElement image={img2} title="Zip Lines"/>
+            <AdventureElement image={img3} title="Canoeing"/>
+            <AdventureElement image={img4} title="Kayaking"/>
         </div>
     </section>
   )

@@ -1,11 +1,13 @@
 import React from 'react'
 import "./outdoor.css"
+import img from "./about-img.jpg"
+
 const Outdoor = ({windowSize}) => {
   return (
     <section id='outdoor' className="outdoor" style={{padding: windowSize > 1200 ? "5rem 9%" : "5rem 1rem"}}>
         <div className="outdoor-cont">
             <div className="outdoor-img">
-                <img src="./images/about-img.jpg" alt="outdoor image" />
+                <img src={img} alt="outdoor image" />
             </div>
             <div className="outdoor-info">
                 <span className="outdoor-heading">

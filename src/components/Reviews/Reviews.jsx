@@ -4,6 +4,13 @@ import Review from "./Review";
 // Import Swiper styles
 import 'swiper/css';
 import "./reviews.css"
+import img1 from "./pic-1.png"
+import img2 from "./pic-2.png"
+import img3 from "./pic-3.png"
+import img4 from "./pic-4.png"
+import img5 from "./pic-5.png"
+import img6 from "./pic-6.png"
+
 const Reviews = ({windowSize}) => {
     const [numOfReviews, setNumOfReviews]=React.useState(3);
   
@@ -30,22 +37,22 @@ const Reviews = ({windowSize}) => {
         loop
         >
             <SwiperSlide>
-                <Review image="images/pic-1.png"/>
+                <Review image={img1}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Review image="images/pic-2.png"/>
+                <Review image={img2}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Review image="images/pic-3.png"/>
+                <Review image={img3}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Review image="images/pic-4.png"/>
+                <Review image={img4}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Review image="images/pic-5.png"/>
+                <Review image={img5}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Review image="images/pic-6.png"/>
+                <Review image={img6}/>
             </SwiperSlide>
         </Swiper>
     </section>

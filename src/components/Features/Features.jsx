@@ -2,6 +2,12 @@ import React, {useEffect} from 'react';
 import "./features.css";
 import Feature from "./Feature"
 import { Navigation } from 'swiper';
+import img1 from "./product-1.jpg"
+import img2 from "./product-2.jpg"
+import img3 from "./product-3.jpg"
+import img4 from "./product-4.jpg"
+import img5 from "./product-5.jpg"
+import img6 from "./product-6.jpg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -40,22 +46,22 @@ const Features = ({windowSize}) => {
         
         >
             <SwiperSlide>
-                <Feature slideNum={1} image="images/product-1.jpg"/>
+                <Feature slideNum={1} image={img1}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Feature slideNum={2} image="images/product-2.jpg"/>
+                <Feature slideNum={2} image={img2}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Feature slideNum={3} image="images/product-3.jpg"/>
+                <Feature slideNum={3} image={img3}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Feature slideNum={4} image="images/product-4.jpg"/>
+                <Feature slideNum={4} image={img4}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Feature slideNum={5} image="images/product-5.jpg"/>
+                <Feature slideNum={5} image={img5}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Feature slideNum={6} image="images/product-6.jpg"/>
+                <Feature slideNum={6} image={img6}/>
             </SwiperSlide>
         </Swiper>
     </section>
